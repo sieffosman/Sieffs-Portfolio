@@ -279,6 +279,13 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.imp-medium{
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			.container {
@@ -508,6 +515,9 @@ input, select, textarea {
 		.row.gtr-150 {
 			margin-top: 0;
 			margin-left: -3em;
+			display: flex;
+    		flex-direction: row;
+    		justify-content: center;
 		}
 
 			.row.gtr-150 > * {
@@ -521,6 +531,34 @@ input, select, textarea {
 				.row.gtr-150.gtr-uniform > * {
 					padding-top: 3em;
 				}
+
+		iframe{
+			height: 651px;
+			width: 361px;
+			overflow: hidden;
+		}
+
+		iframe:hover {
+			overflow: auto;
+		  }
+
+
+		  iframe::-webkit-scrollbar {
+			width: 10px;
+		  }
+		  
+		  iframe::-webkit-scrollbar-track {
+			background-color: #f1f1f1;
+		  }
+		  
+		  iframe::-webkit-scrollbar-thumb {
+			background-color: #888;
+		  }
+		  
+		  iframe::-webkit-scrollbar-thumb:hover {
+			background-color: #555;
+		  }
+		  
 
 		.row.gtr-200 {
 			margin-top: 0;
@@ -1073,6 +1111,7 @@ input, select, textarea {
 				.row > .imp-medium {
 					order: -1;
 				}
+
 
 				.row > .col-1-medium {
 					width: 8.33333%;
