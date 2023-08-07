@@ -376,6 +376,14 @@ input, select, textarea {
 			width: 33.33333%;
 		}
 
+		.col-4.col-12-medium{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: stretch;
+			justify-content: center;
+			align-items: center;
+		}
+
 		.row > .off-4 {
 			margin-left: 33.33333%;
 		}
@@ -517,8 +525,10 @@ input, select, textarea {
 			margin-left: -3em;
 			display: flex;
     		flex-direction: row;
-    		justify-content: center;
+			display: flex;
+			justify-content: space-evenly;
 		}
+
 
 			.row.gtr-150 > * {
 				padding: 0 0 0 3em;
@@ -534,8 +544,10 @@ input, select, textarea {
 
 		iframe{
 			height: 651px;
-			width: 361px;
+			min-width: 361px;
 			overflow: hidden;
+			border: 6px solid var(--primary-Color);
+			border-radius: 40px;
 		}
 
 		iframe:hover {
@@ -2458,13 +2470,14 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: auto;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			padding-top: 6%;
 		}
 
 		ul.alt {
