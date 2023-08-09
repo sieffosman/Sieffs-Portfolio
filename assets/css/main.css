@@ -2679,6 +2679,16 @@ input, select, textarea {
 					line-height: inherit;
 				}
 
+
+				@media screen and (max-width: 736px) {
+					.projectTitle{
+						padding-left: 10%;
+					}
+
+					.projectPara {
+						padding-top: 10%;
+					}
+				}
 /* Table */
 
 	.table-wrapper {
